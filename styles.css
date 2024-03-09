@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Pengaturan tata letak dan penampilan kontainer */
+.container {
+    display: flex; /* Mengatur tampilan elemen kontainer menjadi flexbox */
+    max-width: 800px; /* Menetapkan lebar maksimum kontainer */
+    margin: 50px auto; /* Memberikan margin atas dan bawah 50px, dan margin samping otomatis */
+    padding: 20px; /* Memberikan padding 20px di dalam kontainer */
+    border: 1px solid #4bbedb; /* Memberikan border 1px solid dengan warna #4bbedb */
+    border-radius: 5px; /* Memberikan radius sudut 5px pada border */
+    background-image: linear-gradient(to right, #4bbedb, #8d8a92); /* Memberikan latar belakang berupa gradien linear dari kiri ke kanan */
+}
+
+/* Gaya untuk bagian kalkulator */
+.calculator {
+    flex: 1; /* Memberikan bagian kalkulator fleksibilitas sebesar 1, memungkinkan untuk mengisi ruang yang tersedia */
+    padding-right: 20px; /* Memberikan padding kanan 20px */
+}
+
+/* Gaya untuk hasil */
+.result {
+    flex: 1; /* Memberikan bagian hasil fleksibilitas sebesar 1, memungkinkan untuk mengisi ruang yang tersedia */
+    padding-left: 20px; /* Memberikan padding kiri 20px */
+}
+
+/* Gaya untuk input teks dan angka */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 24px); /* Menetapkan lebar input menjadi 100% dikurangi 24px */
+    padding: 8px; /* Memberikan padding 8px */
+    margin: 5px 0; /* Memberikan margin 5px ke atas dan ke bawah, tanpa margin di samping */
+    box-sizing: border-box; /* Memastikan bahwa lebar dan tinggi elemen termasuk border dan padding, tidak ditambahkan dengan margin */
+    transition: all 0.3s ease; /* Memberikan efek transisi pada semua properti dengan durasi 0.3 detik */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #5712c5; /* Memberikan warna latar belakang */
+    color: white; /* Memberikan warna teks putih */
+    padding: 10px 20px; /* Memberikan padding 10px atas dan bawah, 20px kiri dan kanan */
+    margin: 10px 0; /* Memberikan margin 10px atas dan bawah, tanpa margin di samping */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Memberikan radius sudut 5px pada border */
+    cursor: pointer; /* Mengubah kursor saat dihover menjadi pointer */
+    transition: background-color 0.3s ease; /* Memberikan efek transisi pada warna latar belakang dengan durasi 0.3 detik */
+}
+
+/* Gaya saat tombol dihover */
+button:hover {
+    background-color: #22aad4; /* Mengubah warna latar belakang saat tombol dihover */
+}
+
+/* Gaya untuk hasil */
+#result {
+    margin-top: 20px; /* Memberikan margin atas 20px pada hasil */
+}
+
+/* Gaya untuk footer */
+footer {
+    background-image: linear-gradient(to right, #4bbedb, #8d8a92); /* Memberikan latar belakang berupa gradien linear dari kiri ke kanan */
+    padding: 20px; /* Memberikan padding 20px di dalam footer */
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    font-size: 14px; /* Menetapkan ukuran font menjadi 14px */
+    color: #333; /* Memberikan warna teks */
+    margin-top: 20px; /* Memberikan margin atas 20px */
+}
