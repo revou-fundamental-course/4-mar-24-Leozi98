@@ -5,15 +5,41 @@ body {
   }
 
 
-h1 , h2{
+h1 {
     color: white;
   text-shadow: 10px 10px 10px  #000000; /*text-shadow Property*/
 }
 
-h2 {
-    margin-top: 29px; /* Menggeser ke bawah  */
+span {
+    
+    font-size: 30px; /* Ubah ukuran font */
+    font-style: bold; /* Ubah gaya teks menjadi italic */
+    color: white;
+    text-shadow: 10px 10px 10px  #000000; /*text-shadow Property*/
+    
 }
 
+/* Dropdown container pada "hasil"*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #22aad4;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 5px 16px;
+    z-index: 1;
+  }
+  
+  /* Show dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
   /* Pengaturan tata letak dan penampilan kontainer */
 .container {
@@ -37,6 +63,7 @@ h2 {
 .result {
     flex: 1; /* Memberikan bagian hasil fleksibilitas sebesar 1, memungkinkan untuk mengisi ruang yang tersedia */
     padding-left: 80px; /* Memberikan padding kiri */
+    margin-top: 24px; /*Menggeser ke bawah  */
 }
 
 /* Gaya untuk input teks dan angka */
