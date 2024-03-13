@@ -124,5 +124,11 @@ footer {
     body {
       background-color: lightblue;
     }
+    
+    .result {
+      flex: 1;
+      padding-left: 5px;
+      margin-top: 24px;
+    }
   }
   
