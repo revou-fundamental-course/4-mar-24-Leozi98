@@ -110,3 +110,19 @@ footer {
     color: #333; /* Memberikan warna teks */
     margin-top: 20px; /* Memberikan margin atas */
 }
+  /* tampilan responsif untuk versi mobile */
+  @media only screen and (max-width: 600px) {
+    
+    .container {
+      flex-direction: column;
+    }
+    
+    .item {
+      width: 100%;
+    }
+    
+    body {
+      background-color: lightblue;
+    }
+  }
+  
