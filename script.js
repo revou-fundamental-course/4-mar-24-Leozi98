@@ -7,6 +7,26 @@ function hitungBMI() {
     var berat = document.getElementById("weight").value;
     var tinggi = document.getElementById("height").value;
 
+        // Validasi input
+if (nama === "") {
+    alert("Silakan isi nama Anda.");
+} else if (!jenisKelamin) {
+    alert("Silakan pilih jenis kelamin Anda.");
+} else if (usia === "") {
+    alert("Silakan isi usia Anda.");
+} else if (berat === "") {
+    alert("Silakan isi berat badan Anda.");
+} else if (tinggi === "") {
+    alert("Silakan isi tinggi badan Anda.");
+} else {
+    var jenisKelaminValue = jenisKelamin.value;
+    console.log("Nama:", nama);
+    console.log("Jenis Kelamin:", jenisKelaminValue);
+    console.log("Usia:", usia);
+    console.log("Berat:", berat);
+    console.log("Tinggi:", tinggi);
+}
+
     // Menghitung nilai BMI menggunakan fungsi hitungNilaiBMI
     var bmi = hitungNilaiBMI(berat, tinggi);
     // Mendapatkan kategori BMI menggunakan fungsi dapatkanKategoriBMI
