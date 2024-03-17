@@ -1,134 +1,53 @@
 body {
-    font-family: "Times New Roman", Serif;
-    margin: 0;
-    padding: 0;
-  }
-
-
-h1 {
-    color: white;
-  text-shadow: 10px 10px 10px  #000000; /*text-shadow Property*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa; /* Warna latar belakang yang lebih mirip dengan Instagram */
+  color: #333; /* Warna teks */
 }
 
-span {
-    
-    font-size: 30px; /* Ubah ukuran font */
-    font-style: bold; /* Ubah gaya teks menjadi italic */
-    color: white;
-    text-shadow: 10px 10px 10px  #000000; /*text-shadow Property*/
-    
-}
-
-/* Dropdown container pada "hasil"*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown content */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #22aad4;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 5px 16px;
-    z-index: 1;
-  }
-  
-  /* Show dropdown content on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Pengaturan tata letak dan penampilan kontainer */
 .container {
-    display: flex; /* Mengatur tampilan elemen kontainer menjadi flexbox */
-    max-width: 800px; /* Menetapkan lebar maksimum kontainer */
-    margin: 50px auto; /* Memberikan margin atas dan bawah 50px, dan margin samping otomatis */
-    padding: 20px; /* Memberikan padding di dalam kontainer */
-    border: 1px solid #4bbedb; /* Memberikan border solid */
-    border-radius: 5px; /* Memberikan radius sudut pada border */
-    background-image: linear-gradient(to right, #4bbedb, #8d8a92); /* Memberikan latar belakang gradien linear dari kiri ke kanan */
-    box-shadow: 5px 5px ; /*The box-shadow Property*/
-}
-
-/* Gaya untuk bagian kalkulator */
-.calculator {
-    flex: 1; /* Memberikan bagian kalkulator fleksibilitas sebesar 1, memungkinkan untuk mengisi ruang yang tersedia */
-    padding-right: 10px; /* Memberikan padding kanan */
-}
-
-/* Gaya untuk hasil */
-.result {
-    flex: 1; /* Memberikan bagian hasil fleksibilitas sebesar 1, memungkinkan untuk mengisi ruang yang tersedia */
-    padding-left: 80px; /* Memberikan padding kiri */
-    margin-top: 24px; /*Menggeser ke bawah  */
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px; /* Radius sudut yang lebih besar */
+  background-color: #fff; /* Warna latar belakang kontainer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan yang lebih halus */
 }
 
 /* Gaya untuk input teks dan angka */
 input[type="text"],
 input[type="number"] {
-    width: calc(100% - 24px); /* Menetapkan lebar input menjadi 100% - 24px */
-    padding: 8px; /* Memberikan padding */
-    margin: 5px 0; /* Memberikan margin 5px ke atas dan ke bawah, tanpa margin di samping */
-    box-sizing: border-box; /* Memastikan bahwa lebar dan tinggi elemen termasuk border dan padding, tidak ditambahkan dengan margin */
-    transition: all 0.3s ease; /* Memberikan efek transisi pada semua properti */
-    border-bottom: 1px solid #5712c5;
-    box-shadow: 5px 5px ; /*The box-shadow Property*/
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd; /* Border yang lebih tipis */
+  border-radius: 5px;
 }
 
 /* Gaya untuk tombol */
 button {
-    background-color: #5712c5; /* Memberikan warna latar belakang */
-    color: white; /* Memberikan warna teks putih */
-    padding: 10px 20px; /* Memberikan padding 10px atas dan bawah, 20px kiri dan kanan */
-    margin: 10px 0; /* Memberikan margin 10px atas dan bawah, tanpa margin di samping */
-    border: none; /* Menghilangkan border */
-    border-radius: 5px; /* Memberikan radius sudut pada border */
-    cursor: pointer; /* Mengubah kursor saat dihover menjadi pointer */
-    transition: background-color 0.3s ease; /* Memberikan efek transisi pada warna latar belakang */
-    box-shadow: 5px 5px #000000; /*The box-shadow Property*/
-}
-
-/* Gaya saat tombol dihover */
-button:hover {
-    background-color: #22aad4; /* Mengubah warna latar belakang saat tombol dihover */
-}
-
-/* Gaya untuk hasil */
-#result {
-    margin-top: 45px; /* Memberikan margin pada hasil */
+  background-color: #3897f0; /* Warna latar belakang tombol yang lebih mirip dengan Instagram */
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Gaya untuk footer */
 footer {
-    background-image: linear-gradient(to right, #4bbedb, #8d8a92); /* Memberikan latar belakang berupa gradien linear dari kiri ke kanan */
-    padding: 20px; /* Memberikan padding di dalam footer */
-    text-align: center; /* Mengatur teks menjadi rata tengah */
-    font-size: 14px; /* Menetapkan ukuran font */
-    color: #333; /* Memberikan warna teks */
-    margin-top: 20px; /* Memberikan margin atas */
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #999; /* Warna teks yang lebih lembut */
 }
-  /* tampilan responsif untuk versi mobile */
-  @media only screen and (max-width: 600px) {
-    
-    .container {
-      flex-direction: column;
-    }
-    
-    .item {
-      width: 100%;
-    }
-    
-    body {
-      background-color: lightblue;
-    }
-    
-    .result {
-      flex: 1;
-      padding-left: 5px;
-      margin-top: 24px;
-    }
+
+@media only screen and (max-width: 600px) {
+  /* Gaya untuk tampilan responsif pada perangkat seluler */
+  .container {
+      border-radius: 0; /* Menghilangkan radius sudut pada tampilan responsif */
   }
-  
+}
